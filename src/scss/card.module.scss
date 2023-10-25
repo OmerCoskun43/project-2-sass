@@ -1,0 +1,81 @@
+@import "./variables";
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 1rem;
+  .card {
+    margin-top: 1rem;
+    width: 22%;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: -5px 5px 20px 3px rgb(41, 40, 40);
+    padding: 0.7rem;
+    min-width: 303px;
+    min-height: 370px;
+    h2 {
+      color: red;
+      font-weight: bold;
+    }
+    h3 {
+      color: green;
+      font-weight: bold;
+    }
+  }
+  img {
+    width: 100px;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+  }
+  button {
+    margin-left: 0.5rem;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+  }
+}
+
+.button-small {
+  background-color: $olive;
+}
+.button-large {
+  background-color: $lightOrange;
+  width: 4rem;
+}
+
+@media screen and (max-width: 705px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .card {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .container {
+    .card {
+      width: 45%;
+    }
+  }
+}
+
+@media screen and (max-width: 1355px) {
+  .container {
+    .card {
+      width: 31%;
+    }
+  }
+}
+
+@media screen and (min-width: 1356px) {
+  .container {
+    .card {
+      width: 23%;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "./variables";
+.header {
+  margin-top: 1rem;
+
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.div {
+  background-color: red;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
